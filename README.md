@@ -1,3 +1,16 @@
+# Gale — GAIL on CartPole
+
+Generative adversarial imitation learning in PyTorch: a policy and a value network trained
+against a discriminator that has to tell generated rollouts apart from the expert's.
+`cartpole/model_config.json` holds the training configuration and
+`cartpole/expert/policy.ckpt` is the expert policy used to produce the demonstrations.
+
+```
+python gail.py
+```
+
+Notes from the report on why GAIL rather than behavioural cloning or IRL:
+
 ### Pourquoi utiliser GAIL au lieu de Behavorial cloning ou IRL ?
 #
 #### Behavorial cloning
